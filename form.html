@@ -15,22 +15,27 @@
     <form action="backend.php">
         <!-- div is better to use ranther than br  -->
         <div>
+            <!-- label is used when we want to goto the write area if Name: is clicked. -->
+            <label for="name">Name:</label>
             <!-- name attribute is used to sync with backend like php -->
-            Name: <input type="text" name="myName" id="">
+            <input type="text" name="myName" id="name">
         </div><br>
         <div>
+            <label for="email">Email:</label>
             <!-- input type makes you specific what type of data is to be passed -->
-            Email: <input type="email" name="myEmail" id="">
+            <input type="email" name="myEmail" id="email">
         </div><br>
         <div>
-            Password: <input type="Password" name="myPassword" id="">
+            <label for="Password">Password:</label>
+            <input type="Password" name="myPassword" id="Password">
         </div><br>
         <div>
-            Phone no: <input type="number" name="myPhone_no" id="">
+            <label for="phone">Phone no:</label>
+            <input type="number" name="myPhone_no" id="phone">
         </div><br>
         <div>
-            <label for="Birth Year:"></label>
-            Select Birth Year: <select name="bYear" id="Birth Year:">
+            <label for="Birth Year:">Select Birth Year:</label>
+            <select name="bYear" id="Birth Year:">
                 <option value="1995">1995</option>
                 <option value="1996">1996</option>
                 <option value="1997">1997</option>
@@ -44,22 +49,23 @@
                 <option value="2005">2005</option>
             </select>
         </div><br>
-        <div>
+        <div><label for="eligibility">Are you a Software Engineer:</label>
             <!-- checked attribute is useful when we want to check something by default -->
-            Are you a Software Engineer:
-            <input type="checkbox" checked name="myIdentity" checked id="">
+
+            <input type="checkbox" checked name="myEligibility" checked id="eligibility">
+        </div><br>
+
+        <div>
+            Gender: <br><br>
+            <label for="Male">Male:</label>
+            <input type="radio" checked name="mygender" id="Male">
+            <label for="Female">Female:</label>
+            <input type="radio" name="mygender" id="Female">
         </div><br>
         <div>
-
-        </div>
-        <div>
-            <div>
-                Gender: <br><br>
-                Male:<input type="radio" checked name="mygender" id="">
-                Female:<input type="radio" name="mygender" id="">
-            </div><br>
-            Write about yourself: <br>
-            <textarea name="myBio" id="" cols="36" rows="6"></textarea>
+            <label for="bio">Write about yourself: </label>
+            <br>
+            <textarea name="myBio" id="bio" cols="36" rows="6"></textarea>
         </div><br>
 
         <!-- value attribute is used to write in the submit button itself .  -->
