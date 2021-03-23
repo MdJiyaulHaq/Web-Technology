@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css types</title>
+    <style>
+        p {
+            color: red;
+            background-color: rgb(3, 3, 54);
+            border: lawngreen;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- the css that comes at last is given precidence over other -->
+    <link rel="stylesheet" href="css types.css">
 </head>
+
 <body>
-    <h3></h3>
+    <h3>Inline Css</h3>
+    <!-- note that inline css has precidence over other  -->
+    <p style="color: rgb(11, 188, 194); background-color: rgb(30, 43, 1); 
+    border: hotpink; border-radius: 5px;">This is an example of inline css:</p>
+
+    <h3>Internal Css</h3>
+    <p>This is an example of internal css:</p>
+
+    <h3>External Css</h3>
+    <p id="external">This is an example of external css:</p>
 </body>
+
 </html>
