@@ -1,0 +1,59 @@
+#firstPara {
+    
+    /* this is how you define properties in different lines.  */
+    
+    background-color: rgb(45, 230, 236);
+    border: salmon;
+    height: 128px;
+    width: 512px;
+    border-width: 3px;
+    border-radius: 7px;
+    border-style: solid;
+}
+
+#secondPara {
+    
+    background-color: rgb(241, 24, 248);
+    height: 128px;
+    width: 512px;
+    
+    /* defining in same line  */
+
+    /* border-width: 3px;
+    border-style: solid; 
+       border-color: blue*/
+       border-radius: 7px;
+    border: solid 3px rgb(4, 27, 240);
+}
+
+#thirdPara {
+    
+    background-color: rgb(255, 240, 27);
+    height: 128px;
+    width: 512px;
+    border-style: solid 5px black;
+    
+    /* border-top-left-radius: 17px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 16px; */
+    
+    /* this can be sorted in a line by  */
+    border-radius: 17px 23px 12px 21px;
+    border-left: 2px solid red;
+    border-top: 2px solid maroon;
+    border-right: 2px solid mediumblue;
+    border-bottom: 2px solid mediumvioletred;
+
+}
+#fourthPara {
+
+    /* this is how you put image.  */
+
+    background-image: url(github.png);
+    height: 630px;
+    width: 1200px;
+    background-color: palevioletred ;
+   border: black solid 7px;
+    border-radius: 7px;
+}
