@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css display property</title>
+    <style>
+        .header {
+            margin: auto;
+            width: 66%;
+            /* if everything is in centre no need to use width */
+            border: palevioletred solid 2px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        img {
+            /* by default img is inline so need to convert into block so that other property like margin works  */
+            display: block;
+            width: 33%;
+            margin: auto;
+        }
+
+        h3 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 1px;
+            text-align: center;
+        }
+
+        .box {
+            margin: 13px;
+            padding: 10px;
+            border: solid palevioletred 3px;
+            border-radius: 10px;
+            background-color: rgb(200, 245, 239);
+            /* this property will make it block but remaining screen on left side is left empty */
+            display: block;
+            width: 30%;
+            /* but if inline block property is used it will be converted to block and appear side by side */
+            display: inline-block;
+            width: 29%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="github.jpg" alt="">
+        <h3>This is a responsive Website.</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h3>Md</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequatur facilis impedit cupiditate
+                fugiat eligendi quis debitis odit! Illo iure provident ad quos?</p>
+        </div>
+        <div class="box">
+            <h3>Shankar</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequatur facilis impedit cupiditate
+                fugiat eligendi quis debitis odit! Illo iure provident ad quos?</p>
+        </div>
+        <div class="box">
+            <h3>Arjun</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequatur facilis impedit cupiditate
+                fugiat eligendi quis debitis odit! Illo iure provident ad quos?</p>
+        </div>
+        <div class="box">
+            <h3>Harry Om</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequatur facilis impedit cupiditate
+                fugiat eligendi quis debitis odit! Illo iure provident ad quos?</p>
+        </div>
+        <div class="box">
+            <h3>Godfather</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia consequatur facilis impedit cupiditate
+                fugiat eligendi quis debitis odit! Illo iure provident ad quos?</p>
+        </div>
+    </div>
+</body>
+
+</html>

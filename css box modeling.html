@@ -6,15 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box modeling</title>
-
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+            background-color: rgb(119, 233, 218);
+        }
+
         .container {
             border: crimson 5px solid;
-            background-color: rgb(119, 233, 218);
+
             background-image: url(github.png);
             border-radius: 9px;
-            margin: 34px;
-            padding: 34px;
+
+            /* margin: 34px; 
+            padding: 34px; */
+
+            padding: 23px 34px 23px 43px;
+            margin: 23px 34px 23px 43px;
+            width: 786px;
         }
     </style>
 </head>

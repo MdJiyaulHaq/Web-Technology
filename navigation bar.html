@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: deeppink;
+        }
+
+        .navbar {
+            background-color: rgb(245, 181, 224);
+            border: solid 2px black;
+            align-items: center;
+            margin-top: 0px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            list-style-type: none;
+            float: left;
+            margin-left: 2em;
+            margin-top: 7px;
+            border: rgb(247, 118, 219) solid 2px;
+            border-radius: 3px;
+        }
+
+        i {
+            margin-top: -0.18rem;
+
+        }
+
+        .ab {
+            margin-bottom: 3px;
+        }
+
+        #search {
+            float: right;
+            margin-right: 4rem;
+            height: 1rem;
+            border-radius: 13px;
+            padding-left: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+
+                <li><a class="ab" href="#"> <i class="fab fa-apple fa-2x" height="3rem"></i></a></li>
+                <li><a class="a" href="#">Iphone</a></li>
+                <li><a class="a" href="#">Ipad</a></li>
+                <li><a class="a" href="#">Mac</a></li>
+
+                <input name="name" id="search" placeholder="Search apple products"></input>
+
+                <li><a class="a" href="#">Watch TV</a></li>
+                <li><a class="a" href="#">Music</a></li>
+                <li><a class="a" href="#">Support Us</a></li>
+                <li><a class="a" href="#">About Us</a></li>
+            </ul>
+
+        </nav>
+    </header>
+</body>
+
+</html>

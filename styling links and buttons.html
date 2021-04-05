@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling buttons and links</title>
+
+    <style>
+
+        .container{
+            border: 2px solid salmon;
+            border-radius: 5px;
+            margin: 12px;
+            padding: 12px 23px;
+        }
+
+        a{
+            text-decoration: none;
+            color: tomato;
+        }
+        a:hover{
+            background-color: red;
+        }
+
+        .btn{
+            border-radius: 12px;
+            border: seagreen solid 2px;
+            background-color: rgb(255, 161, 250);
+        }
+
+        a:visited{
+            background-color: rgb(5, 160, 88);
+        }
+        
+        .btn:hover{
+            cursor: pointer;
+            background-color: yellow;
+        }
+        
+        .link{
+            border-radius: 12px;
+            cursor: pointer;
+            padding: 2px;
+            border: rgb(9, 141, 158) solid 2px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>we will give style to button.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odit itaque temporibus sunt dolore veritatis
+            odio, blanditiis cumque optio, rem officia! Consequuntur quae pariatur perferendis nulla, minus possimus
+            magnam quasi magni dolorem. Explicabo, unde.</p>
+        <a href="https://youtube.com" class="link">youtube</a>
+        <a href="https://facebook.com" class="link">facebook</a>
+        <button class="btn">click me</button>
+    </div>
+</body>
+
+</html>
