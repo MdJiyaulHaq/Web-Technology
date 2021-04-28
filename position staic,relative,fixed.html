@@ -7,34 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css display property</title>
     <style>
+        
         /* position: static,relative,absolute,fixed,sticky */
         #box1 {
             position: static;
+
             /*the position of any box is static by default */
         }
 
         #box2 {
             position: relative;
+
             /*the new position is relative to its original position*/
+
             top: 37px;
             left: 33px;
         }
 
         #box3 {
             position: absolute;
+
             /*the new position is relative to first parent div. Arjun floats like..*/
+
             top: 37px;
             left: 33px;
         }
 
         #box4 {
             position: fixed;
+
             /*the new position is fixed to the defined(in this case bottom) position*/
+
             bottom: 3px;
         }
 
         #header {
             position: sticky;
+
             /*the position is fixed to the top position of the screen.*/
 
             /* like nav menu that we want to stay at top even user scroll down or else where */
@@ -49,14 +58,18 @@
         .header {
             margin: auto;
             width: 66%;
+
             /* if everything is in centre no need to use width */
+            
             border: palevioletred solid 2px;
             border-radius: 15px;
             padding: 10px;
         }
 
         img {
+
             /* by default img is inline so need to convert into block so that other property like margin works  */
+
             display: block;
             width: 33%;
             margin: auto;
@@ -73,11 +86,15 @@
             padding: 10px;
             border: solid palevioletred 3px;
             border-radius: 10px;
-            background-color: rgb(200, 245, 239);
+            background-color: rgb(200, 245, 239); 
+
             /* this property will make it block but remaining screen on left side is left empty */
+
             display: block;
             width: 30%;
+
             /* but if inline block property is used it will be converted to block and appear side by side */
+
             display: inline-block;
             width: 29%;
         }
