@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box {
+            border: 3px solid black;
+            color: white;
+            text-align: center;
+            background-color: tomato;
+            display: none;
+        }
+
+        @media (max-width:400px) {
+            #box1 {
+                display: block;
+                background-color: springgreen;
+            }
+        }
+
+        @media (min-width:400px) and (max-width:800px) {
+            #box2 {
+                display: block;
+                background-color: rgb(19, 146, 250);
+            }
+        }
+
+        @media (min-width:800px) {
+            #box3 {
+                display: block;
+                background-color: rgb(255, 0, 170);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">Display for a phone.</div>
+    <div class="box" id="box2">Display for a tablet.</div>
+    <div class="box" id="box3">Display for a computer.</div>
+</body>
+
+</html>

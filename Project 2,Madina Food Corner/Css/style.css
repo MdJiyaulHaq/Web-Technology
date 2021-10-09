@@ -1,0 +1,56 @@
+
+/* css reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    background-color:  rgb(184, 252, 255);
+    position: relative;
+}
+/* Navbar : logo */
+#logo{
+    margin-left: 20px;
+    padding: 4px;
+}
+/* Navbar : logo: image */
+#logo img{
+    height: 66px;
+    margin: 0px;
+    padding: 8px;
+}
+/* Navbar : Ul: list  */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 2 rem;
+    margin: 5px;
+    padding: 6px;
+}
+#navbar ul li a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 3px;
+    padding: 3px 3px;
+    border-radius: 9px;
+}
+#navbar ul li a:hover{
+    color: white;
+    background-color: #311c1c;;
+    
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(184, 252, 255);
+    position: relative;
+}

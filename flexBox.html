@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex Box</title>
+    <style>
+        .container {
+            border: black 3px solid;
+            height: 400px;
+            padding: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            /* 2 in one */
+
+            /* justify-content: center;
+            justify-content:space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            align-items: center;
+            align-items: flex-start;
+            /* by default*/
+            align-items: flex-end;
+            align-items: stretch;
+
+            /* flex-direction: row;   (by default)
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+        }
+
+        .box {
+            border: solid rgb(255, 0, 98) 3px;
+            padding: 12px;
+            margin: 12px;
+            text-align: center;
+            color: brown;
+            height: 100px;
+            width: 100px;
+        }
+
+        #box1 {
+            /* higher the order later the box appears*/
+            order: 23;
+        }
+
+        #box2 {
+            /* while changing the resolution the box will grow*/
+            flex-grow: 1;
+        }
+
+        #box3 {
+            /* while changing the resolution the box will shrink*/
+            /* flex-shrink: 3; */
+            /*this sets the box width(when flex direction is row) and height(when flex direction is column)*/
+            flex-basis: 220px;
+
+            /*short hand: grow,shrink,flex basis*/
+            flex: 2 2 230px;
+            /* targeted box is aligned at the point of choice*/
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is box1</div>
+        <div class="box" id="box2">This is box2</div>
+        <div class="box" id="box3">This is box3</div>
+    </div>
+</body>
+
+</html>
