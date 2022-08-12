@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop example</title>
+    <style>
+        .blackbox {
+            display: inline-block;
+            height: 550px;
+            width: 550px;
+            border: 1px solid black;
+        }
+
+        .img {
+            height: 500px;
+            width: 500px;
+            background-image: url(allah.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blackbox">
+        <div class="img" draggable="true"></div>
+    </div>
+    <div class="blackbox"></div>
+
+    <script>
+        const blackboxs = document.getElementsByClassName('blackbox');
+        const img = document.querySelector('.img');
+        for (blackbox of blackboxs) {
+            blackbox.addEventListener('dragover', (e) => {
+                e.preventDefault();
+            })
+            blackbox.addEventListener('drop', (e) => {
+                e.target.append(img);
+            })
+        }
+    </script>
+
+</body>
+
+</html>

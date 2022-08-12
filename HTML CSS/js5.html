@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listner</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>This is a paragraph</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero molestias ab vel illum, nobis iusto.
+            Eos assumenda repellendus, quis placeat, ea sint reiciendis maxime atque voluptas a incidunt voluptatum
+            quia.</p>
+
+    </div>
+    <button id="btn" onclick="showHideFunc()">Show/Hide</button>
+    <script>
+        var para = document.getElementById("para");
+        para.addEventListener('mouseover', function run() {
+            console.log("mouse is hovering");
+        });
+        var para = document.getElementById("para");
+        para.addEventListener('mouseout', function run() {
+            console.log("mouse is out");
+        });
+    </script>
+</body>
+
+</html>
