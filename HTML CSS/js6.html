@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listner</title>
+</head>
+
+<body>
+    <div id="main">
+        <p1 id="para">Welcome Mr. </p1>
+    </div>
+
+    <button id="btn" onclick="print()">Greet</button>
+
+    <script>
+
+        function print() {
+            var para = document.getElementById( "para");
+            para.innerHTML = "Hello Mr. Md";
+        }
+
+    </script>
+</body>
+
+</html>
